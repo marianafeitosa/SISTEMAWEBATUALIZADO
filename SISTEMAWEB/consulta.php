@@ -56,8 +56,49 @@
                 <th scope="col">Observação</th>
                 <th scope="col">Ação</th>
               </tr>
+            
 
             </thead>
+             <?php
+                            require_once("pessoa.class.php");
+                            $pessoa = new Pessoa();
+                            $pessoa->setNome($_POST['nome']);
+                            echo $pessoa->getNome();
+                        ?>
+                    </td>
+                    <td>
+                    <?php
+                            require_once("pessoa.class.php");
+                            $pessoa = new Pessoa();
+                            $pessoa->setTelefone($_POST['telefone']);
+                            echo $pessoa->getTelefone();
+                        ?>
+                    </td>
+                    <td>
+                    <?php
+                            require_once("pessoa.class.php");
+                            $pessoa = new Pessoa();
+                            $pessoa->setOrigem($_POST['origem']);
+                            echo $pessoa->getOrigem();
+                        ?>
+                    </td>
+
+                    <td>
+                    <?php
+                            require_once("pessoa.class.php");
+                            $pessoa = new Pessoa();
+                            $pessoa->setData($_POST['data']);
+                            echo $pessoa->getData();
+                        ?>
+                    </td>
+
+                    <td>
+                    <?php
+                            require_once("pessoa.class.php");
+                            $pessoa = new Pessoa();
+                            $pessoa->setObservacao($_POST['observacao']);
+                            echo $pessoa->getObservacao();
+                        ?>
           </div>
               
                 
